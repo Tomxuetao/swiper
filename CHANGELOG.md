@@ -1,5 +1,56 @@
 # Changelog
 
+## [Swiper 6.3.3](https://github.com/nolimits4web/swiper/compare/v6.3.2...v6.3.3) - Released on October 9th, 2020
+
+- Core
+  - Fixed issue with wrong slides calculation when slides have inner scrollbars
+- Autoplay
+  - Now it will continue autoplay if it reaches the end and new slides will be added later
+- React
+  - Fixed issue when slide render function data was set only after interaction
+- Minor fixes
+
+## [Swiper 6.3.2](https://github.com/nolimits4web/swiper/compare/v6.3.1...v6.3.2) - Released on September 28th, 2020
+
+- Svelte
+  - Fixed issue with throwing error when using breakpoints
+
+## [Swiper 6.3.1](https://github.com/nolimits4web/swiper/compare/v6.3.0...v6.3.1) - Released on September 25th, 2020
+
+- Core
+
+  - A11y
+    - Init module after all other modules initialized
+
+## [Swiper 6.3.0](https://github.com/nolimits4web/swiper/compare/v6.2.0...v6.3.0) - Released on September 25th, 2020
+
+- Core
+
+  - A11y
+    - Added new parameters `containerMessage`, `containerRoleDescriptionMessage` and `itemRoleDescriptionMessage` (#3834 thanks to @jenemde)
+
+- React
+
+  - Now `SwiperSlide` component requires unique `virtualIndex` to be set so Swiper can know which slide is rendered exactly
+
+- Vue
+
+  - Fixed issue when `SwiperSlide` was not rendered if used with `v-for`
+  - Now `SwiperSlide` component requires unique `virtualIndex` to be set so Swiper can know which slide is rendered exactly
+
+- All new Swiper Svelte components:
+
+  ```html
+  <Swiper spaceBetween="{50}" slidesPerView="{3}">
+    <SwiperSlide>Slide 1</SwiperSlide>
+    <SwiperSlide>Slide 2</SwiperSlide>
+    ...
+  </Swiper>
+  <script>
+    import { Swiper, SwiperSlide } from 'swiper/svelte';
+  </script>
+  ```
+
 ## [Swiper 6.2.0](https://github.com/nolimits4web/swiper/compare/v6.1.3...v6.2.0) - Released on September 4rd, 2020
 
 - All new Swiper Vue.js (v3) components:
@@ -30,7 +81,7 @@
   - Pagination
     - Now it won't set a11y attributes on customly rendered bullets
 - React
-  - Fixed issue with loop mode and breakpoints not being recalucate slides
+  - Fixed issue with loop mode and breakpoints not being recalculate slides
 
 ## [Swiper 6.1.2](https://github.com/nolimits4web/swiper/compare/v6.1.1...v6.1.2) - Released on August 17th, 2020
 
